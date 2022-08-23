@@ -95,6 +95,7 @@ void SearchEntry(int number)
             printf("\n Course 2 is Grade: %d \n", s[i].C2G);
             printf("\n Course 3 is ID: %s \n", s[i].C3ID);
             printf("\n Course 3 is Grade: %d \n\n", s[i].C3G);
+            printf("*************************************\n\n");
             flag2 = 1;
             break;
         }
@@ -126,6 +127,8 @@ void ListIsFull()
     {
         printf("The List is Not Full Yet!\n");
         printf("You Have only used %d from the available entries \n\n", checker_Used);
+        delay(3);
+        system("cls");
     }
 }
 
