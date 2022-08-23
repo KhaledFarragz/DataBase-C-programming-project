@@ -3,7 +3,6 @@
 
 struct student
 {
-    int Student_ID;
     char firstName[20];
     char SecondName[20];
     int  ID;
