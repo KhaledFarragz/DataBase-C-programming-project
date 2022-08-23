@@ -39,7 +39,9 @@ void AddEntry(int n, int k)
         scanf("%d", &s[k].C3G);
         printf("*************************\n\n");
         ++k;
-    } while (k < (kk + n));
+        system("cls");
+    }
+    while (k < (kk + n));
 }
 
 void ReadEntry()
