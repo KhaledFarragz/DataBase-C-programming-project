@@ -42,6 +42,7 @@ void main()
             }
             system("cls");
             AddEntry(n, k);
+            system("cls");
             break;
         case 2:
             printf("Enter The ID: ");
