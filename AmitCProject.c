@@ -125,7 +125,7 @@ void ListIsFull()
     else
     {
         printf("The List is Not Full Yet!\n");
-        printf("You Have Been used Just %d from the size of the database\n\n", checker_Used);
+        printf("You Have only used %d from the available entries \n\n", checker_Used);
     }
 }
 
