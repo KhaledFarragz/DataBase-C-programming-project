@@ -12,11 +12,13 @@ void main()
     while (i = 1)
     {
         printf("1. Add Student\n");
-        printf("2. Find Student\n");
+        printf("2. Find Student Is Exist or not\n");
         printf("3. Delete Student\n");
-        printf("4. List All Student\n");
+        printf("4. Read Student Details\n");
         printf("5. See if the database is full or not\n");
-        printf("6. Exit The System\n");
+        printf("6. Get Used Size\n");
+        printf("7. Get ID Lists\n");
+        printf("8. Exit The System\n");
         printf("\nEnter Your Choice: ");
         scanf("%d", &choice);
         printf("\n");
@@ -41,7 +43,7 @@ void main()
                 }
             }
             system("cls");
-            AddEntry(n, k);
+            SDB_AddEntry(n, k);
             system("cls");
             break;
         case 2:
@@ -49,23 +51,44 @@ void main()
             scanf("%d", &n);
             printf("\n");
             system("cls");
-            SearchEntry(n);
+            SDB_IsIdExist(n);
+            delay(3);
+            system("cls");
             break;
         case 3:
             printf("Enter The ID: ");
             scanf("%d", &n);
             system("cls");
-            DeleteEntry(n);
+            SDB_DeleteEntry(n);
+            delay(3);
+            system("cls");
             break;
         case 4:
             system("cls");
-            ReadEntry();
+            printf("Enter Student ID: ");
+            scanf("%d",&n);
+            SDB_ReadEntry(n);
+            printf("\n");
+            delay(3);
+            system("cls");
             break;
         case 5:
             system("cls");
-            ListIsFull();
+            SDB_IsFull();
             break;
         case 6:
+            system("cls");
+            SDB_GetUsedSize();
+            delay(3);
+            system("cls");
+            break;
+        case 7:
+            system("cls");
+            SDB_GetIdList();
+            delay(3);
+            system("cls");
+            break;
+        case 8:
             return ;
         default:
             system("cls");
