@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1660405734 source:c:\users\amit\documents\test\alex33_siglelinkedlist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"SigleLinkedList.h"
+
+1660405247 c:\users\amit\documents\test\alex33_siglelinkedlist\siglelinkedlist.h
+
+1660405679 source:c:\users\amit\documents\test\alex33_siglelinkedlist\siglelinkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	"SigleLinkedList.h"
+
+1660405734 source:e:\other\courses\embedded systems\rars\single linked list\alex33_siglelinkedlist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"SigleLinkedList.h"
+
+1660405960 e:\other\courses\embedded systems\rars\single linked list\alex33_siglelinkedlist\siglelinkedlist.h
+
+1660405679 source:e:\other\courses\embedded systems\rars\single linked list\alex33_siglelinkedlist\siglelinkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	"SigleLinkedList.h"
+
+1661292096 source:c:\users\blu-ray\desktop\last one\amit_c_project.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"AMIT_C_PROJECT.h"
+
+1661292100 c:\users\blu-ray\desktop\last one\amit_c_project.h
+
+1661292099 source:c:\users\blu-ray\desktop\last one\main.c
+	<stdio.h>
+	<time.h>
+	"AMIT_C_PROJECT.h"
+
+1661798852 source:c:\users\blu-ray\desktop\new folder\c_project\main.c
+	<stdio.h>
+	<time.h>
+	"AMIT_C_PROJECT.h"
+
+1661797799 c:\users\blu-ray\desktop\new folder\c_project\amit_c_project.h
+
+1661798183 source:c:\users\blu-ray\desktop\new folder\c_project\amit_c_project.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"AMIT_C_PROJECT.h"
+
