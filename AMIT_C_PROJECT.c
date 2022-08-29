@@ -4,7 +4,7 @@
 #include "AMIT_C_PROJECT.h"
 
 
-void AddEntry(int n, int k)
+void SDB_AddEntry(int n, int k)
 {
     int kk;
     kk = k;
@@ -17,10 +17,6 @@ void AddEntry(int n, int k)
         return main();
     }
     do {
-        printf("\n Enter Student First Name: ");
-        scanf("%s", &s[k].firstName);
-        printf("\n Enter Student Second Name: ");
-        scanf("%s", &s[k].SecondName);
         printf("\n Enter Student ID: ");
         scanf("%d", &s[k].ID);
         printf("\n Enter Student Class Year: ");
@@ -44,7 +40,7 @@ void AddEntry(int n, int k)
     while (k < (kk + n));
 }
 
-void ReadEntry()
+void SDB_GetIdList()
 {
     int i;
     int flag1 = 0;
@@ -65,30 +61,20 @@ void ReadEntry()
         {
             if (s[i].ID != NULL)
             {
-                printf(" Student name: %s %s\n", s[i].firstName, s[i].SecondName);
-                printf("\n Student ID: %d \n", s[i].ID);
-                printf("\n Student class Year: %d \n", s[i].Year);
-                printf("\n Course 1 is ID: %s \n", s[i].C1ID);
-                printf("\n Course 1 is Grade: %d \n", s[i].C1G);
-                printf("\n Course 2 is ID: %s \n", s[i].C2ID);
-                printf("\n Course 2 is Grade: %d \n", s[i].C2G);
-                printf("\n Course 3 is ID: %s \n", s[i].C3ID);
-                printf("\n Course 3 is Grade: %d \n", s[i].C3G);
-                printf("*************************************\n\n");
+                printf("\n Student ID: %d \n\n", s[i].ID);
 
             }
         }
     }
 }
 
-void SearchEntry(int number)
+void SDB_ReadEntry(int number)
 {
     int  flag2 = 0;
     for (int i = 0;i < 10;i++)
     {
         if (s[i].ID == number)
         {
-            printf(" Student name: %s %s\n", s[i].firstName, s[i].SecondName);
             printf("\n Student ID: %d \n", s[i].ID);
             printf("\n Student Class Year: %d \n", s[i].Year);
             printf("\n Course 1 is ID: %s \n", s[i].C1ID);
@@ -109,7 +95,7 @@ void SearchEntry(int number)
     }
 }
 
-void ListIsFull()
+void  SDB_IsFull()
 {
     int checker_Empty = 0;
     int checker_Used = 0;
@@ -128,13 +114,12 @@ void ListIsFull()
     else
     {
         printf("The List is Not Full Yet!\n");
-        printf("You Have only used %d from the available entries \n\n", checker_Used);
         delay(3);
         system("cls");
     }
 }
 
-void DeleteEntry(int number)
+void SDB_DeleteEntry(int number)
 {
     int flag3 = 0;
     for (int i = 0;i < 10;i++)
@@ -155,6 +140,45 @@ void DeleteEntry(int number)
     else if (flag3 == 0)
     {
         printf("Student Not Found\n \n");
+    }
+}
+
+void  SDB_GetUsedSize()
+{
+    int checker_Empty = 0;
+    int checker_Used = 0;
+    for (int h = 0; h < 10;++h)
+    {
+        if (s[h].ID == NULL)
+        {
+            checker_Empty += 1;
+        }
+    }
+    checker_Used = 10 - checker_Empty;
+  printf("You Have only used %d from the available entries \n", checker_Used);
+         printf("%d is avaliable \n\n", checker_Empty);
+}
+
+void SDB_IsIdExist(int n)
+{
+    int flag4 = 0 ;
+ for(int i = 0;i < 10; ++i)
+ {
+     if(s[i].ID == n)
+     {
+        flag4 += 1 ;
+     }
+ }
+
+ if(flag4 == 1)
+ {
+      printf("The Student Is Exist In The DataBase\n");
+      printf("************************************\n\n");
+ }
+ else
+    {
+     printf("The Student Is Not In The DataBase\n");
+      printf("************************************\n\n");
     }
 }
 
