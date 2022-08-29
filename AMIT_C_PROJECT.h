@@ -3,8 +3,6 @@
 
 struct student
 {
-    char firstName[20];
-    char SecondName[20];
     int  ID;
     int  Year;
     char C1ID[5];
@@ -17,12 +15,20 @@ struct student
 
 #endif
 
-void AddEntry(int, int);
+void SDB_IsFull();
 
-void ReadEntry();
+void SDB_GetUsedSize();
 
-void SearchEntry(int);
+void SDB_AddEntry(int, int);
 
-void ListIsFull();
+void SDB_DeleteEntry(int);
 
-void DeleteEntry(int);
+void SDB_ReadEntry();
+
+void SDB_GetIdList();
+
+void SDB_IsIdExist(int);
+
+
+
+
